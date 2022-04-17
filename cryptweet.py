@@ -1,7 +1,5 @@
 import tweepy
 import json
-!pip -q install transformers
-!pip3 install emoji
 import emoji
 import transformers
 from transformers import pipeline
@@ -60,8 +58,8 @@ def sentimentanalyser(keyword):
       score.append(-i['score'])
   sentiment=sum(score)/len(score)
   if sentiment>0:
-    print('Sentiment of public is positive with probability',sentiment)
-  else:print('Sentiment of public is negative with probability',-sentiment)
+    return 'Sentiment of public is positive with probability '+sentiment
+  else:return 'Sentiment of public is negative with probability '+(-sentiment)
 
 
 
