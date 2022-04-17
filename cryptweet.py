@@ -50,7 +50,7 @@ def tweextractor(keyword):
 def sentimentanalyser(keyword):
   tweets=tweextractor(keyword)
   score=[]
-  mood=sentimentmodel(tweet)
+  mood=sentimentmodel(tweets)
   for i in mood:
     if i['label']=='POS':
       score.append(i['score'])
