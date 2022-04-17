@@ -33,7 +33,7 @@ def tweextractor(keyword):
   for i in tweepy.Cursor(api.search_tweets, keyword,tweet_mode="extended",lang='en',result_type='recent',count=100).items(500):
     i = json.dumps(i._json)
     i = json.loads(i)
-    if i['full_text'] not in tweet:
+    if i['full_text'] not in tweet and len(i['full_text'])<500:
       tweet.append(i['full_text'])
   for i in tweepy.Cursor(api.search_tweets, keyword,tweet_mode="extended",lang='en',result_type='popular',count=100).items(500):
     i = json.dumps(i._json)
