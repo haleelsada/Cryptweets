@@ -58,8 +58,7 @@ def sentimentanalyser(keyword):
       score.append(-i['score'])
   sentiment=sum(score)/len(score)
   if sentiment>0:
-    return 'Sentiment of public of '+keyword+' is positive with probability '+str(sentiment)
-  else:return 'Sentiment of public of '+keyword+' is negative with probability '+str(-sentiment)
-
+    return 'Sentiment of public is positive with probability '+str(sentiment)
+  else:return 'Sentiment of public is negative with probability '+str(-sentiment)
 
 
