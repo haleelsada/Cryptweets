@@ -14,5 +14,5 @@ st.subheader(test)
 key = st.text_input(label="Enter the keyword eg:#bitcoin ",)
 
 while key!='':
-    st.subheader('the given keyword is '+cryptweet.sentimentanalyser(key))
+    st.subheader(cryptweet.sentimentanalyser(key))
     break
