@@ -12,8 +12,8 @@ sentimentmodel=pipeline(model="finiteautomata/bertweet-base-sentiment-analysis")
 
 from tweepy.auth import OAuthHandler
 
-auth = OAuthHandler('t6d8uj4w9P6DjrNSmfSd42gEI', 'ZLcVXunCbN6NO4rUup6vTR33rO32epm0LFHLkzFLZnhjbQmQzZ')
-auth.set_access_token('1405483945379074054-ktOMmQ6HUcZwzOxiHfjcFmP74hkTn5', 'hV792qfEAuJcvZmkzmoMf61qaaSnoV8D2YiIFYjzAgr06')
+auth = OAuthHandler('tFASoDpMTkZJTX7QCGdITEDdb', 'lKldBouO8cZTQE4OanGSKKf4Ny3JUwljrE0RqgbD0oNJNheTvb')
+auth.set_access_token('1405483945379074054-z5vq7rSsCqyaoCECPzq2Vo936cofhI', 'IJcXhKXNN95fDovl0VgdTPkbCQN7k1yn0YQhCOtJrTlMf')
 
 
 api = tweepy.API(auth,wait_on_rate_limit=True)
